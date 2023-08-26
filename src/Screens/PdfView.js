@@ -1,10 +1,13 @@
 import React, { forwardRef } from 'react'
+import logo from '../Assets/PLogo.png'
 
 const dummyTex = `It has survived not, but also the It has survived not, but also the It has survived not, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem`
 const singal = ` is simply dummy typesetting industry. Lorem Ipsum has been the industry's `
 
 const contactInfo = <p>When and how to obtain emergency in case of Chest pain, Breathlessness, Syncope, Fever, Cough, <br/> Weakness, Drug Allergy, Convulsion, Failure to Thrive <br/> Contact this No : 0233 - 2212430 / 033 - 2212431 Dr. Paramashetti 9422040430</p>
 const emergencyNo = `0233 - 2212430 / 0233 - 2212431 Mr. Shaikh - 9767091351`
+
+
 
 const  PdfView = forwardRef((props, ref) => {
     const  {
@@ -33,13 +36,19 @@ const  PdfView = forwardRef((props, ref) => {
         dischargeIntroduction,
         futureTreatmentPlan,
         followUp,
-        treatingDoctor
+        treatingDoctor,
+        patinetID
       } = props.data
     console.log("props ", props)
     const renderHeader = () => {
         return(
             <div>
-                <h2 style={styles.title}>PARAMASHETTI MULTISPECIALITY HOSPITAL</h2>
+                <div style={styles.headerContainer}>
+                    <img src={logo} width={110} height={60}/>
+                    <h2 style={styles.title}>PARAMASHETTI MULTISPECIALITY HOSPITAL</h2>
+                    <p style={styles.registrationId}>{patinetID}</p>
+                </div>
+                {renderSeprater()}
                 <p style={styles.address}>Viswas Estate, Miraj - Sangli Road, Miraj - 416 410, Phone: 0233 - 2212430</p>
             </div>
         )
@@ -255,6 +264,15 @@ const styles = {
         height: '296mm',
         padding: 10 
     },
+    headerContainer: {
+        display: 'flex',
+        flexDireaction: 'row',
+        alignItems: 'center'
+    },
+    registrationId: {
+        color: 'red',
+        paddingRight: 10
+    },
     mainInnerContainer: {
         border: '1px solid black',
         width: '100%',
@@ -264,7 +282,8 @@ const styles = {
         textAlign: 'center',
         padding: 10,
         paddingTop: 0,
-        borderBottom: "1px solid black"
+        flex: 1
+        // borderBottom: "1px solid black"
     },
     address: {
         textAlign: 'center',
