@@ -21,7 +21,7 @@ const firebaseConfig = {
   const db = getFirestore(app);
 
 const WelcomeScreen = () => {
-    const [searchVal, setSearchVal] = useState('261200678')
+    const [searchVal, setSearchVal] = useState('')
     const [patientList, setPatientList] = useState([])
     const [isLoading, setIsLoading] = useState(false)
     useEffect(()=> {
