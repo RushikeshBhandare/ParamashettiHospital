@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ParamashettiHospital/static/css/main.26a97691.css",
-    "main.js": "/ParamashettiHospital/static/js/main.2fe428fd.js",
+    "main.js": "/ParamashettiHospital/static/js/main.ae11a988.js",
     "static/js/787.d8071fe6.chunk.js": "/ParamashettiHospital/static/js/787.d8071fe6.chunk.js",
     "static/media/PLogo.png": "/ParamashettiHospital/static/media/PLogo.0a5317546fcc498c9af3.png",
     "static/media/logo.svg": "/ParamashettiHospital/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ParamashettiHospital/index.html",
     "main.26a97691.css.map": "/ParamashettiHospital/static/css/main.26a97691.css.map",
-    "main.2fe428fd.js.map": "/ParamashettiHospital/static/js/main.2fe428fd.js.map",
+    "main.ae11a988.js.map": "/ParamashettiHospital/static/js/main.ae11a988.js.map",
     "787.d8071fe6.chunk.js.map": "/ParamashettiHospital/static/js/787.d8071fe6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26a97691.css",
-    "static/js/main.2fe428fd.js"
+    "static/js/main.ae11a988.js"
   ]
 }
